@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="is">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>clubs.is — Vefsíða í vinnslu</title>
+  <style>
+    html,body{height:100%;margin:0}
+    body{
+      background-color:#111; /* fallback */
+      background-image: url('images/404-bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      /* Don't stretch the image */
+      background-size: auto;
+      color:#fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display:flex;align-items:center;justify-content:center;
+      text-align:center;
+    }
+    .overlay{
+      background: rgba(0,0,0,0.45); /* makes text readable over image */
+      padding: 3rem 2rem;
+      border-radius: 8px;
+      max-width: 900px;
+      width: calc(100% - 48px);
+    }
+    h1{font-size: clamp(28px, 6vw, 72px); margin:0 0 0.5rem}
+    p{font-size: clamp(14px, 3.5vw, 20px); margin:0; letter-spacing:0.06em}
+    .muted{opacity:0.85}
+    /* Keep image from repeating on very small screens and provide spacing if image is smaller than viewport */
+    @media (max-width:600px){
+      body{background-attachment: scroll}
+      .overlay{padding:2rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay" role="main">
+    <h1>clubs.is</h1>
+    <p class="muted">VEFSÍÐA Í VINNSLU</p>
+  </div>
+</body>
+</html>
